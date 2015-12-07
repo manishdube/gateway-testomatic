@@ -1,0 +1,12 @@
+ReportType,PostingDateStart,PostingDateEnd,MsrbId,Cusip6,Cusip9,IssuerName,ObligorName,CouponPercent,ClearingId,EBS,Spread,CompanyName,NumTimesToRun
+Q1,6/1/2011,5/31/2012,B0027,967331,967331CW7,issuer1,obligor1,8,0075,BOKL,11,Bank of Oklahoma,4
+Q2,6/1/2011,5/31/2012,B0027,967331,967331CW7,issuer1,obligor1,8,0075,BOKL,11,Bank of Oklahoma,4
+Q6,6/1/2011,5/31/2012,B0027,967331,967331CW7 0738120N4,issuer1,obligor1,8,0075,BOKL,11,Bank of Oklahoma,4
+Q8,6/1/2011,6/29/2011,B0027,967331,967331CW7,issuer1,obligor1,8,0075,BOKL,11,Bank of Oklahoma,4
+Q10,6/1/2011,6/11/2011,B0027,967331,967331CW7,issuer1,obligor1,8,0075,BOKL,11,Bank of Oklahoma,4
+Q11,6/1/2011,6/29/2011,B0027,967331,967331CW7,issuer1,obligor1,8,0075,BOKL,11,Bank of Oklahoma,4
+Q12,6/1/2011,6/10/2011,B0027,967331,967331CW7,issuer1,obligor1,8,0075,BOKL,11,Bank of Oklahoma,4
+Q14,6/1/2011,6/10/2011,B0027,967331,967331CW7,issuer1,obligor1,8,0075,BOKL,11,Bank of Oklahoma,4
+Q20,6/1/2011,5/31/2012,B0027,967331,,issuer1,obligor1,8,0075,BOKL,11,Bank of Oklahoma,4
+Q30,6/1/2011,5/31/2012,B0027,967331,,issuer1,obligor1,8,0075,BOKL,11,Bank of Oklahoma,4
+

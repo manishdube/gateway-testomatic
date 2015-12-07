@@ -1,0 +1,49 @@
+﻿gatewayUrl: https://gwqa4.msrb.org/
+shortUrl: https://shortqa4.msrb.org/
+rtrsUrl: https://rtrswebqa4.msrb.org/
+emmaUrl: http://emmaqa4.msrb.org/
+msrbOrgUrl: http://wwwqa4.msrb.org/
+
+userId: MASTERUSER
+password: gw*loginMSRB1
+email: amansoor@msrb.org
+registrantEmail: regressone@msrbtest.org
+smtpTest:
+    username: regressone@msrbtest.org
+    password: 4xxe$$M4
+staff:
+    userId: GWSTAFF
+    password: gw*loginMSRB1
+confIssuer:
+    userId: CONFISSUER
+    password: gw*loginMSRB1
+unconfIssuer:
+    userId: UNCONFISSUER
+    password: gw*loginMSRB1
+formalIssuer:
+    userId: FORMALISSUER
+    password: gw*loginMSRB1
+dealerMAA:
+    userId: DEALERMAA
+    password: gw*loginMSRB1
+dealer:
+    userId: DEALER
+    password: gw*loginMSRB1
+regulator:
+    userId: REGULATOR
+    password: gw*loginMSRB1
+muniAdvisor:
+    userId: MUNIADVISOR
+    password: gw*loginMSRB1
+etester22:
+    userId: GWTESTER22
+    password: gw*loginMSRB1
+logFileTemplate: logs\test-run-{dt}.log
+summaryFileTemplate: logs\TestSummary-{dt}.xlsx
+htmlFileTemplate: logs\TestSummary-{dt}
+sqlInit:
+    tnsName: ILOGQA4
+    userId: ilogadmin
+    password: ilogadmin
+    fileName: GW_USERCREATION_SCRIPT.sql
+regWebV2: true

@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>62a32ec2-aec7-45f2-9490-51dc8e3a28fe</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>GaewayTestomatic</RootNamespace>
+    <AssemblyName>GatewayTestomatic</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
+    <Name>GatewayTestomatic</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <Tailcalls>false</Tailcalls>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>bin\Debug\GatewayTestomatic.XML</DocumentationFile>
+    <Prefer32Bit>true</Prefer32Bit>
+    <StartArguments>-pressenter -nowarmup -log -firefox</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <Tailcalls>true</Tailcalls>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>bin\Release\GatewayTestomatic.XML</DocumentationFile>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '11.0'">
+      <PropertyGroup Condition="Exists('$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets')">
+        <FSharpTargetsPath>$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets</FSharpTargetsPath>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\FSharp\Microsoft.FSharp.Targets')">
+        <FSharpTargetsPath>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\FSharp\Microsoft.FSharp.Targets</FSharpTargetsPath>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+  <Import Project="$(FSharpTargetsPath)" />
+  <ItemGroup>
+    <None Include="BrowserSupport\chromedriver.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BrowserSupport\IEDriverServer.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="BrowserSupport\ReadMe.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
+    <None Include="App.config" />
+    <None Include="config.qa4.yaml" />
+    <Compile Include="versioninfo.fs" />
+    <Compile Include="etconfig.fs" />
+    <Compile Include="commandlineargs.fs" />
+    <Compile Include="etreporter.fs" />
+    <Compile Include="summaryreporter.fs" />
+    <Compile Include="lib.fs" />
+    <Compile Include="gwlib.fs" />
+    <Compile Include="warmup.fs" />
+    <Compile Include="Tests\Administration_GeneralSystem.fs" />
+    <Compile Include="Tests\Administration_User.fs" />
+    <Compile Include="Tests\AccountOrganizationManagement.fs" />
+    <Compile Include="Tests\AgentRelationshipManagement.fs" />
+    <Compile Include="Tests\DealerFeedbackSystem.fs" />
+    <Compile Include="Tests\FormA12Registrant.fs" />
+    <Compile Include="Tests\FormA12Registration.fs" />
+    <Compile Include="Tests\FormA12RegistrationMisc.fs" />
+    <Compile Include="Tests\MarketTransparencyServices.fs" />
+    <Compile Include="Tests\MarketTransparencySystems.fs" />
+    <Compile Include="Tests\OrganizationAdministration.fs" />
+    <Compile Include="Tests\RegistrationApproval_IssuersObligorIndividualAgent.fs" />
+    <Compile Include="Tests\RegistrantInformationForms.fs" />
+    <Compile Include="Tests\Reports_OutputConfirmation.fs" />
+    <Compile Include="Tests\Reports_RegulatorWeb_RegistrationReports.fs" />
+    <Compile Include="Tests\Reports_RQS_Disclosure.fs" />
+    <Compile Include="Tests\Reports_RQS_TradeData.fs" />
+    <Compile Include="Tests\RestrictedContent_MSRBDepartmentHeadContent.fs" />
+    <Compile Include="Tests\RestrictedContent_PQAC.fs" />
+    <Compile Include="Tests\RightsManagementAndAuthentication.fs" />
+    <Compile Include="Tests\StaffContent_Miscellaneous.fs" />
+    <Compile Include="Tests\Subscriptions.fs" />
+    <Compile Include="Tests\UserProfile.fs" />
+    <Compile Include="Tests\FormA12RelatedLinks.fs" />
+    <Compile Include="devtests.fs" />
+    <Compile Include="testmain.fs" />
+    <None Include="sample.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="package.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SummaryReportTemplate.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="GW_USERCREATION_SCRIPT.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="config.yaml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="chromedriver.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="canopy">
+      <HintPath>..\packages\canopy.0.9.42\lib\canopy.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FSharp.Configuration">
+      <HintPath>..\packages\FSharp.Configuration.0.5.1\lib\net40\FSharp.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FSharp.Core">
+      <HintPath>..\packages\FSharp.Core.3.1.2.1\lib\net40\FSharp.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="S22.Imap">
+      <HintPath>..\packages\S22.Imap.3.6.0.0\lib\net40\S22.Imap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpYaml">
+      <HintPath>..\packages\FSharp.Configuration.0.5.1\lib\net40\SharpYaml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SizSelCsZzz">
+      <HintPath>..\packages\SizSelCsZzz.0.3.36.0\lib\SizSelCsZzz.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="WebDriver">
+      <HintPath>..\packages\Selenium.WebDriver.2.48.2\lib\net40\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\packages\Selenium.Support.2.48.2\lib\net40\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TestomaticSupport\TestomaticSupport.csproj">
+      <Name>TestomaticSupport</Name>
+      <Project>{abbe1637-b546-4ff3-a50d-172c0dd352c2}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Target Name="BeforeBuild">
+    <VersionTokenReplace Path="versioninfo.fs" />
+  </Target>
+  <UsingTask TaskName="VersionTokenReplace" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v12.0.dll">
+    <ParameterGroup>
+      <Path ParameterType="System.String" Required="true" />
+    </ParameterGroup>
+    <Task>
+      <Code Type="Fragment" Language="cs"><![CDATA[
+string version = DateTime.Now.ToString("yyyy-MM-dd-HHmm");
+string content = "module versioninfo" + Environment.NewLine
+                  + Environment.NewLine
+                  + "let versionString = \"" + version + "\"" + Environment.NewLine;
+File.WriteAllText(Path, content);
+
+]]></Code>
+    </Task>
+  </UsingTask>
+</Project>

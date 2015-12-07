@@ -1,0 +1,98 @@
+﻿#gatewayUrl: https://gwqa1.msrb.org/
+#gatewayUrl: https://gwqa2.msrb.org/
+#gatewayUrl: https://gwqa3.msrb.org/
+#gatewayUrl: https://gwqa4.msrb.org/
+#gatewayUrl: https://gwuat1.msrb.org/
+#gatewayUrl: https://gwuat2.msrb.org/
+#gatewayUrl: https://gwuat3.msrb.org/
+gatewayUrl: https://gwuat4.msrb.org/
+#gatewayUrl: https://gwuat5.msrb.org/
+#gatewayUrl: https://gw.msrb.org/
+
+#shortUrl: https://shortqa1.msrb.org/
+#shortUrl: https://shortqa2.msrb.org/
+#shortUrl: https://shortqa3.msrb.org/
+#shortUrl: https://shortqa4.msrb.org/
+#shortUrl: https://shortuat1.msrb.org/
+#shortUrl: https://shortuat2.msrb.org/
+#shortUrl: https://shortuat3.msrb.org/
+shortUrl: https://shortuat4.msrb.org/
+#shortUrl: https://shortuat5.msrb.org/
+#shortUrl: https://short.msrb.org/
+
+#rtrsUrl: https://rtrswebqa1.msrb.org/
+#rtrsUrl: https://rtrswebqa2.msrb.org/
+#rtrsUrl: https://rtrswebqa3.msrb.org/
+#rtrsUrl: https://rtrswebqa4.msrb.org/
+#rtrsUrl: https://rtrswebuat1.msrb.org/
+#rtrsUrl: https://rtrswebuat2.msrb.org/
+#rtrsUrl: https://rtrswebuat3.msrb.org/
+rtrsUrl: https://rtrswebuat4.msrb.org/
+#rtrsUrl: https://rtrswebuat5.msrb.org/
+#rtrsUrl: https://rtrsweb.msrb.org/
+
+#emmaUrl: http://emmaqa1.msrb.org/
+#emmaUrl:  http://emmaqa2.msrb.org
+#emmaUrl: http://emmaqa3.msrb.org/
+#emmaUrl: http://emmaqa4.msrb.org/
+#emmaUrl: http://emmauat1.msrb.org/
+#emmaUrl: http://emmauat2.msrb.org/
+#emmaUrl: http://emmauat3.msrb.org/
+emmaUrl: http://emmauat4.msrb.org/
+#emmaUrl: http://emmauat5.msrb.org/
+#emmaUrl: http://emma.msrb.org/
+
+#msrbOrgUrl: http://wwwqa1.msrb.org/
+#msrbOrgUrl: http://wwwqa2.msrb.org/
+#msrbOrgUrl: http://wwwqa3.msrb.org/
+#msrbOrgUrl: http://wwwqa4.msrb.org/
+#msrbOrgUrl: http://wwwuat1.msrb.org/
+#msrbOrgUrl: http://wwwuat2.msrb.org/
+#msrbOrgUrl: http://wwwuat3.msrb.org/
+msrbOrgUrl: http://wwwuat4.msrb.org/
+#msrbOrgUrl: http://wwwuat5.msrb.org/
+#msrbOrgUrl: http://www.msrb.org/
+
+userId: MASTERUSER
+password: gw*loginMSRB1
+email: amansoor@msrb.org
+registrantEmail: regressone@msrbtest.org
+smtpTest:
+    username: regressone@msrbtest.org
+    password: 4xxe$$M4
+staff:
+    userId: GWSTAFF
+    password: gw*loginMSRB1
+confIssuer:
+    userId: CONFISSUER
+    password: gw*loginMSRB1
+unconfIssuer:
+    userId: UNCONFISSUER
+    password: gw*loginMSRB1
+formalIssuer:
+    userId: FORMALISSUER
+    password: gw*loginMSRB1
+dealerMAA:
+    userId: DEALERMAA
+    password: gw*loginMSRB1
+dealer:
+    userId: DEALER
+    password: gw*loginMSRB1
+regulator:
+    userId: REGULATOR
+    password: gw*loginMSRB1
+muniAdvisor:
+    userId: MUNIADVISOR
+    password: gw*loginMSRB1
+etester22:
+    userId: GWTESTER22
+    password: gw*loginMSRB1
+logFileTemplate: logs\test-run-{dt}.log
+summaryFileTemplate: logs\TestSummary-{dt}.xlsx
+htmlFileTemplate: logs\TestSummary-{dt}
+sqlInit:
+    tnsName: ILOGQA4
+    userId: ilogadmin
+    password: ilogadmin
+    fileName: GW_USERCREATION_SCRIPT.sql
+regWebV2: true

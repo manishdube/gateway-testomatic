@@ -1,0 +1,8 @@
+ReportType,PostingDateStart,PostingDateEnd,MsrbId,Cusip6,Cusip9,IssuerName,ObligorName,CouponPercent,ClearingId,EBS,Spread,CompanyName,NumTimesToRun
+Q1,1/1/2010,6/1/2010,A0278,,,,,,,,,,
+Q2,1/1/2012,1/2/2012,A6907,,71883REC3,,,,,,,,
+Q6,1/1/2012,6/30/2012,,,016066BH4,,,,,,,,
+Q8,1/1/2012,6/30/2012,,,,,,7.5,,,,,
+Q11,1/1/2012,6/30/2012,,,,,,,ABC,,,,
+Q10,1/1/2012,6/30/2012,,,,,,,,,101,,
+Q12,1/1/2012,6/30/2012,,,,,,,ABC,ABC,,,
