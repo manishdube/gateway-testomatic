@@ -53,7 +53,7 @@ msrbOrgUrl: http://wwwuat4.msrb.org/
 #msrbOrgUrl: http://wwwuat5.msrb.org/
 #msrbOrgUrl: http://www.msrb.org/
 
-userId: MASTERUSER
+userId: scook
 password: gw*loginMSRB1
 email: amansoor@msrb.org
 registrantEmail: regressone@msrbtest.org
@@ -61,31 +61,31 @@ smtpTest:
     username: regressone@msrbtest.org
     password: 4xxe$$M4
 staff:
-    userId: GWSTAFF
+    userId: scook
     password: gw*loginMSRB1
 confIssuer:
-    userId: CONFISSUER
+    userId: scook
     password: gw*loginMSRB1
 unconfIssuer:
-    userId: UNCONFISSUER
+    userId: scook
     password: gw*loginMSRB1
 formalIssuer:
-    userId: FORMALISSUER
+    userId: scook
     password: gw*loginMSRB1
 dealerMAA:
-    userId: DEALERMAA
+    userId: scook
     password: gw*loginMSRB1
 dealer:
-    userId: DEALER
+    userId: scook
     password: gw*loginMSRB1
 regulator:
-    userId: REGULATOR
+    userId: scook
     password: gw*loginMSRB1
 muniAdvisor:
-    userId: MUNIADVISOR
+    userId: scook
     password: gw*loginMSRB1
 etester22:
-    userId: GWTESTER22
+    userId: scook
     password: gw*loginMSRB1
 logFileTemplate: logs\test-run-{dt}.log
 summaryFileTemplate: logs\TestSummary-{dt}.xlsx

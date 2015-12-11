@@ -118,7 +118,7 @@ let main argv =
 //            UserProfile.core ()
         match cla.browser with
             | Firefox -> start firefox
-            | Chrome -> start chrome
+//            | Chrome -> istart chrome
             | IE -> start ie
         if cla.warmUp then
             warmupGateway ()
